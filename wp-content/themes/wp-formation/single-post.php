@@ -33,15 +33,27 @@ if (have_posts()) :
 
         ?>
 
-        <section class="py-5 text-center container">
+        <section class="py-5 text-center header-post" style="background-image: url('<?php the_post_thumbnail_url() ?>');">
             <div class="row py-lg-5">
                 <div class="col-lg-6 col-md-8 mx-auto">
-                    <h1 class="fw-light"><?php the_title() ?></h1>
+                    <div class="title-box">
+                        <h1 class="fw-light"><?php the_title() ?></h1>
 
-                    <?php the_content() ?>
+                        <ul class="info">
+                            <li>Auteur : <?php the_author_posts_link() ?></li>
+                            <li>Date : <?php the_modified_date('d/m/Y') ?></li>
+                        </ul>
+                        <div class="excerpt"><?php the_excerpt() ?></div>
+                    </div>
                 </div>
             </div>
         </section>
+
+        <div class="album py-5 bg-light">
+            <div class="container">
+                <?php the_content() ?>
+            </div>
+        </div>
 
     <?php
 

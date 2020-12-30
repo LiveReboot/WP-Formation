@@ -1,0 +1,74 @@
+.card-img-top {
+    width: 100%;
+    height: 225px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: #444444;
+}
+
+h2 a {
+    text-decoration: none;
+    color: inherit !important;
+}
+
+.header-post {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: #444444;
+}
+
+.header-post .title-box {
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.header-post .title-box .info li {
+    display: inline-block;
+    font-size: 0.8em;
+    color: whitesmoke;
+    margin: 15px;
+    text-align: center;
+}
+
+.header-post .title-box .info li.label {
+    font-style: italic;
+    font-size: 0.7em;
+}
+
+.header-post .title-box .info li.data {
+    font-weight: bold;
+}
+
+.header-post .title-box h1 {
+    color: whitesmoke;
+}
+
+.header-post .title-box .excerpt {
+    font-size: 0.8em;
+    color: whitesmoke;
+}
+
+.avatar {
+    border: 10px solid #fff;
+    border-bottom: 45px solid #fff;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+
+@media (min-width: 768px) {
+    .avatar {
+        transform: rotate(-10deg);
+    }
+}
+
+
+.author-description {
+    line-height: 12pt;
+    font-size: 12pt;
+}
+
+.text-justify {
+    text-align: justify;
+}
